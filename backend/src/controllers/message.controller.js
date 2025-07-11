@@ -1,7 +1,7 @@
 import User from "../models/user.model.js";
 import Message from "../models/message.model.js";
 import cloudinary from "../lib/cloudinary.js"//?This line of code imports the Cloudinary configuration from the config file. It allows us to use Cloudinary's functionality for image uploading and management.
-import { getReceiverSocketId,io } from "../lib/socket.js";
+import { getReceiverSocketId,getIO } from "../lib/socket.js";
 
 export const getUsersForSidebar = async (req, res) => {
     try{
